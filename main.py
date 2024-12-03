@@ -273,3 +273,27 @@
 #
 # # Запускаем главное событие приложения
 # root.mainloop()
+
+
+# Лабораторная работа №10
+# ВИЗУАЛИЗАЦИЯ РЕЗУЛЬТАТОВ РАБОТЫ
+# МАТЕМАТИЧЕСКИХ АЛГОРИТМОВ
+# С ИСПОЛЬЗОВАНИЕМ NUMPY И MATPLOTLIB
+
+# 1. Написать функцию, которая принимает список целых чи-
+# сел и возвращает True, если в списке отсутствуют нули, в про-
+# тивном случае возвращает False.
+
+import numpy as np
+
+def has_no_zeros_numpy(int_list):
+
+    array = np.array(int_list)
+    return np.all(array != 0)
+
+# Пример использования
+example_list = [1, 2, 3, 4, 5]
+print(has_no_zeros_numpy(example_list))  # Вывод: True
+
+example_list_with_zero = [1, 2, 0, 4, 5]
+print(has_no_zeros_numpy(example_list_with_zero))  # Вывод: False
