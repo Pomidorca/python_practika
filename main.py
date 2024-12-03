@@ -295,5 +295,6 @@ def has_no_zeros_numpy(int_list):
 example_list = [1, 2, 3, 4, 5]
 print(has_no_zeros_numpy(example_list))  # Вывод: True
 
+
 example_list_with_zero = [1, 2, 0, 4, 5]
 print(has_no_zeros_numpy(example_list_with_zero))  # Вывод: False
